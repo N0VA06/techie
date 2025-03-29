@@ -1,0 +1,78 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #1A4E68aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #1A4E68aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #505052;
+}
+
+/* Gotham-inspired style additions - updated for darker theme */
+.bat-shadow {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.city-silhouette {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath fill='%23080809' d='M0,0 L0,100 L1000,100 L1000,0 L980,0 L980,40 L960,40 L960,70 L950,70 L950,40 L930,40 L930,60 L920,60 L920,80 L900,80 L900,30 L880,30 L880,50 L860,50 L860,70 L840,70 L840,40 L820,40 L820,60 L800,60 L800,50 L780,50 L780,30 L760,30 L760,70 L750,70 L750,50 L730,50 L730,20 L710,20 L710,40 L700,40 L700,60 L680,60 L680,40 L670,40 L670,20 L650,20 L650,50 L640,50 L640,30 L620,30 L620,60 L600,60 L600,40 L590,40 L590,20 L570,20 L570,40 L550,40 L550,70 L530,70 L530,30 L510,30 L510,50 L490,50 L490,70 L470,70 L470,40 L450,40 L450,60 L430,60 L430,30 L420,30 L420,50 L400,50 L400,80 L380,80 L380,60 L360,60 L360,40 L350,40 L350,60 L330,60 L330,20 L310,20 L310,50 L290,50 L290,80 L270,80 L270,40 L260,40 L260,20 L240,20 L240,40 L220,40 L220,70 L200,70 L200,30 L180,30 L180,50 L160,50 L160,70 L140,70 L140,40 L120,40 L120,60 L100,60 L100,50 L80,50 L80,30 L60,30 L60,70 L40,70 L40,40 L20,40 L20,60 L0,0 Z'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.bat-symbol {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vh;
+  height: 60vh;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23080809' d='M50,15 C45,15 45,20 40,25 C35,30 25,30 20,25 C15,20 15,25 15,30 C15,35 20,40 25,45 C30,50 30,60 25,65 C20,70 25,70 30,70 C35,70 40,65 45,60 C50,55 60,55 65,60 C70,65 75,70 80,70 C85,70 90,70 85,65 C80,60 80,50 85,45 C90,40 95,35 95,30 C95,25 95,20 90,25 C85,30 75,30 70,25 C65,20 65,15 60,15 C55,15 55,15 50,15 Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.01;
+  pointer-events: none;
+  z-index: -2;
+}
